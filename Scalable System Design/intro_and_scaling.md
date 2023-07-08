@@ -45,5 +45,6 @@ For example, if there are subsequent requests and one request depends on somethi
 Example:
 
 ```
-If Server A handled the first request and stored session data (like authenticated user information or temporary data), then subsequent requests routed to Server B won't have access to that session data, since Server B has its own separate memory. ```
+If Server A handled the first request and stored session data (like authenticated user information or temporary data), then subsequent requests routed to Server B won't have access to that session data, since Server B has its own separate memory. 
+```
 
