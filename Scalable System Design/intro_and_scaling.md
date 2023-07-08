@@ -29,7 +29,10 @@ requests then just scale your exisiting server. and we can do the same with data
 
 - Still single point of failure. if either of database or server goes down then you app will stop working.
 
-### Horizonatal Server:
+### Horizonatal Scaling:
+
+![Horizontal Scaling](./assets/horizontal.png)
+
 
 In this approach, you basically add multiple servers, and there will be one load balancer that will manage requests among those server. basically will decide where to send this request(probably with less load).
 
