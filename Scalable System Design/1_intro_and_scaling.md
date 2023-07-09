@@ -49,4 +49,3 @@ If Server A handled the first request and stored session data (like authenticate
 temporary data), then subsequent requests routed to Server B won't have access to that session data,
 since Server B has its own separate memory. 
 ```
-
