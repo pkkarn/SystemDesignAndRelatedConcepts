@@ -45,3 +45,15 @@ point of failure.
 
 - It adds complexity, as you can imagine because your data are stored in different shards... So in case
 if you want to perform join operations from these two shards, then it becomes complex thing. 
+
+
+## Denormalzing
+
+First lets a take an example of Normalized dataset. For example assume that you have `orderSchema` and 
+it has `userId` field, so there will separate `userSchema` attatched with it.
+
+But in this you have to make atleast two query or one join operation if you want information from both
+of these tables
+
+
+`Denormalized` data is where you store all the information at one place that you need. But in this case you would need extra space to store additional field, updates will take time and all.
