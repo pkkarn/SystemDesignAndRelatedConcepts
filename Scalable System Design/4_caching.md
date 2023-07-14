@@ -53,3 +53,21 @@ and will start from 0, to deal with such problems, we have different options e.g
 `Count-Min Sketch technique with LFU`: This is a probabilistic data structure that serves as a frequency table of events in a stream of data. It uses hash functions to map events to frequencies. Although there can be collisions where different events are mapped to the same frequency, it tends to be rare if the table size and number of hash functions are chosen appropriately. When used with LFU, it provides a space-efficient way to estimate the frequencies of different events.
 
 `Aging`: This technique periodically decrements the counters of all pages in the cache, thus lowering the impact of historical page references. This can also be thought of as a way of "forgetting" about older accesses over time.
+
+
+## Tool and Technologies for Caching:
+
+### Memecached
+
+- In memory key-value store: if there is value with this key then get that from there or else find from database.
+- Open Source
+
+### Redis:
+
+- published/sub feature
+- More features
+- bit more complex
+
+### ElasticCahce
+
+- Managed Cache system - fully managed
