@@ -93,3 +93,9 @@ An inverted index flips the relationship around, so instead of mapping documents
 With this approach, when a user makes a query, the system can quickly check which documents contain the query terms. Most modern search engines, including Elasticsearch, use inverted indices because they are highly efficient for search operations.
 
 Forward indexing is typically a step in the process of creating an inverted index. The system starts with forward indexing to track which terms appear in each document, then it inverts this index to make searches faster and more efficient.
+
+### Note:
+
+You can also keep count of how many times it appeared in your document that will help you to rank these documents as well... let's say if `palm tree` appeared 2 times in document 1 and 1 time in document 2 then you can place document 1 at first instead of document 2...
+
+Similary You can write more complex queries like that...
